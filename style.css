@@ -459,6 +459,9 @@ aside hr {
     display: block;
 }
 
+.main-promo button:hover {
+    cursor: pointer;
+}
 
 /* Стили для footer */
 
