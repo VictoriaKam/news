@@ -262,7 +262,7 @@ aside {
 .author-photo {
     width: 150px;
     height: auto;
-    flex: 0 0 45%;
+    flex: 0 0 40%;
     border-radius: 50%;
 }
 
@@ -286,7 +286,7 @@ aside hr {
 }
 
 .author-info-details {
-    flex: 0 0 45%;
+    flex: 0 0 40%;
 }
 
 .author-name {
