@@ -1,0 +1,488 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+
+/* Стили для header */
+
+header#main-header {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 3%;
+    box-shadow: 0 0 5px rgba(48, 43, 48, 0.7);
+}
+
+h1 {
+    font-weight: 700;
+    font-style: italic;
+    flex: 55%;
+}
+
+nav {
+    flex: 45%;
+}
+
+ul#header-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#hot-news {
+    position: relative;
+}
+
+#fire {
+    position: absolute;
+    bottom: 0;
+    right: 84px;
+}
+
+#hot-news:hover {
+    color: #EF271B;
+    border-bottom: 3px solid #EF271B;
+}
+
+#politics:hover {
+    color: #00AFB5;
+    border-bottom: 3px solid #00AFB5;
+}
+
+#economy:hover {
+    color: #8EA604;
+    border-bottom: 3px solid #8EA604;
+}
+
+#technology:hover {
+    color: #FF7700;
+    border-bottom: 3px solid #FF7700;
+}
+
+#culture:hover {
+    color: #EFCA08;
+    border-bottom: 3px solid #EFCA08;
+}
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+
+/* Стили для основной статьи */
+
+#article-1 {
+    flex: 80%;
+    margin: 2% 6%;
+}
+
+.article-heading {
+    font-size: 45px;
+    font-style: normal;
+    margin: 35px 0 25px 0;
+}
+
+.article-description {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.main-image-block {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image-container {
+    width: 100%;
+}
+
+.article-main-image {
+    width: 100%;
+    max-width: 877px;
+}
+
+.main-info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-info-wrap-container {
+    flex: 0 0 50%;
+}
+
+.london-borough {
+    overflow: hidden;
+    padding: 0 15% 0 0;
+}
+
+.london-borough:nth-child(even) .article-image {
+    float: left;
+    width: 60%;
+    margin: 0 16px 0 0;
+}
+
+.london-borough:nth-child(odd) .article-image {
+    float: right;
+    width: 60%;
+    margin: 0 0 0 16px;
+}
+
+.london-borough img {
+    width: 100%;
+}
+
+.london-borough p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.photo-description {
+    font-size: 12px;
+    color: #737373;
+    font-weight: 700;
+}
+
+.photo-source {
+    font-size: 10px;
+    color: #737373;
+}
+
+.extra-info {
+    display: flex;
+    width: 100%;
+    max-width: 877px;
+    margin: 0 auto;
+}
+
+.article-info {
+    flex: 80%;
+}
+
+.author {
+    font-weight: 700;
+}
+
+.social-nets {
+    flex: 20%;
+    align-self: flex-end;
+}
+
+.social-nets ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.social-net-link {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.5;
+}
+
+.social-net-link:hover {
+    cursor: pointer;
+    background-color: #e6e6e6;
+    opacity: 1;
+}
+
+.social-net-link img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+hr {
+    opacity: 0.7;
+    width: 100%;
+    max-width: 877px;
+    margin: 2% auto;
+}
+
+.main-info h3 {
+    font-size: 27px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: oblique;
+    margin: 6% 0 10% 0;
+}
+
+
+/* Стили для aside */
+
+aside {
+    flex: 20%;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 3%;
+}
+
+.about-author {
+    padding: 5% 3%;
+    position: absolute;
+    top: 1%;
+}
+
+.author-photo {
+    width: 150px;
+    height: auto;
+    flex: 0 0 45%;
+    border-radius: 50%;
+}
+
+.about-author h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+aside hr {
+    margin: 5% 0;
+}
+
+.author-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-info-details {
+    flex: 0 0 45%;
+}
+
+.author-name {
+    font-weight: 700;
+}
+
+.author-position {
+    font-size: 0.8rem;
+}
+
+.author-info-details span {
+    font-size: 0.7rem;
+    color: #737373;
+    font-style: oblique;
+}
+
+.author-motto {
+    font-style: italic;
+    color: #737373;
+    font-weight: 500;
+}
+
+.author-general-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-nets-author {
+    flex: 0 0 15%;
+}
+
+.author-general-info p {
+    flex: 0 0 80%;
+    font-size: 14px;
+    line-height: 2;
+    ;
+}
+
+.social-nets-author ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.related-topics {
+    height: 12%;
+    top: 50%;
+    position: absolute;
+    padding: 1% 3%;
+}
+
+.related-topics h3 {
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+}
+
+.related-topics-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.related-topics-image {
+    flex: 0 0 47%;
+    position: relative;
+}
+
+.related-topics-image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.related-topics a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-topics-text {
+    flex: 0 0 47%;
+    font-size: 12px;
+}
+
+.related-topics-text p {
+    margin: 0;
+    color: black;
+    text-transform: capitalize;
+}
+
+.related-topics-text p:hover {
+    text-decoration: underline;
+}
+
+.promo-1 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.promo-2 {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
+
+.first-promo-line {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 700;
+    color: #737373;
+    text-transform: capitalize;
+}
+
+.second-promo-line {
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3973ac;
+    text-transform: capitalize;
+}
+
+.promo-1 hr,
+.promo-2 hr,
+.main-promo hr {
+    width: 50%;
+    margin: 5% auto;
+}
+
+.promo-1 a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.promo-2 a {
+    text-decoration: none;
+    color: #3973ac;
+}
+
+.main-promo {
+    position: absolute;
+    top: 35%;
+}
+
+.main-promo .first-promo-line {
+    line-height: 1.5;
+}
+
+.main-promo button {
+    color: white;
+    background-color: #3973ac;
+    border: 2px solid #3973ac;
+    border-radius: 5px;
+    padding: 4% 2%;
+    width: 70%;
+    margin: 5% auto;
+    display: block;
+}
+
+
+/* Стили для footer */
+
+footer {
+    border-top: 1px solid rgba(48, 43, 48, 0.5);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: #737373;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 600px;
+    margin: 0 auto;
+}
+
+footer ul a {
+    font-weight: 400;
+    font-size: 15px;
+    color: #737373;
+}
